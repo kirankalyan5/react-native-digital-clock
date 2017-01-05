@@ -2,7 +2,7 @@
   "name": "react-native-digital-clock",
   "version": "1.0.0",
   "description": "React native digital clock component for IOS and Android",
-  "main": "digitalClock.js",
+  "main": "DigitalClock.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
