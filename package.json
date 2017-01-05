@@ -1,0 +1,16 @@
+{
+  "name": "react-native-digital-clock",
+  "version": "1.0.0",
+  "description": "React native digital clock component for IOS and Android",
+  "main": "digitalClock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "DigitalClock",
+    "IOS",
+    "Android"
+  ],
+  "author": "Kiran Kalyan",
+  "license": "MIT"
+}
