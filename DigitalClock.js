@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+
 import {
     View,
     Text,
@@ -13,9 +14,6 @@ class DigitalClock extends Component {
         this.state = {
             liveTime: '',
         }
-    }
-
-    componentDidMount() {
         let timeFormater = this.timeFormater
         setInterval(() => {
             let currentDate = new Date()
@@ -24,7 +22,6 @@ class DigitalClock extends Component {
                 liveTime: timeFormat
             })
         }, 1000)
-
     }
 
     timeFormater(time) {
@@ -45,14 +42,14 @@ class DigitalClock extends Component {
 
 const styles = StyleSheet.create({
     clockText: {
-        fontSize: 18,
         color: '#444444',
+        fontSize: 18,
     }
 })
 
 DigitalClock.propTypes = Object.assign({}, Component.propTypes, {
-    clockWrapperStyles: View.propTypes.style,
-    clockStyles: Text.propTypes.style,
+    clockWrapperStyles: View.PropTypes.style,
+    clockStyles: Text.propTyPropTypespes.style,
 })
 
 export default DigitalClock
