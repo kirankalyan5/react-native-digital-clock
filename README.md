@@ -11,10 +11,7 @@ class ConsumerComponent extends Component {
     render() {
         return (
             <View>
-                <SegmentedControlTab
-                    values={['First', 'Second', 'Third']}
-                    onTabPress= {index => console.log(index))}
-                    />
+                <DigitalClock />
             </View>)
     }
 }
