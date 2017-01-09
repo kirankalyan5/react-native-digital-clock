@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     clockText: {
         color: '#000',
         fontSize: 18,
-        fontWeight: 500
+        fontWeight: '500'
     }
 })
 
