@@ -15,7 +15,7 @@ class DigitalClock extends Component {
             liveTime: '',
         }
         let timeFormater = this.timeFormater
-        setInterval(() => {
+        this.getTime =  setInterval(() => {
             let currentDate = new Date()
             let timeFormat = `${timeFormater(currentDate.getHours())}:${timeFormater(currentDate.getMinutes())}:${timeFormater(currentDate.getSeconds())}`
             this.setState({
@@ -30,7 +30,11 @@ class DigitalClock extends Component {
         }
         return time
     }
-
+    
+    componentWillUnmount() {
+        clearInterval(this.getTime)
+    }
+    
     render() {
         return (
             <View style={this.props.clockWrapperStyles}>
@@ -42,8 +46,9 @@ class DigitalClock extends Component {
 
 const styles = StyleSheet.create({
     clockText: {
-        color: '#444444',
+        color: '#000',
         fontSize: 18,
+        fontWeight: 500
     }
 })
 
